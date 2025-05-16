@@ -1,7 +1,6 @@
 # 📝 To-Do List CLI App
 
 A simple **Command-Line To-Do List App** made using **Python**.  
-Perfect beginner project for learning **functions**, **file handling**, and **basic CRUD** logic!
 
 ---
 
@@ -24,7 +23,7 @@ Perfect beginner project for learning **functions**, **file handling**, and **ba
 
 ## 🛠️ Technologies Used
 
-- Python (Beginner-friendly)
+- Python
 - File I/O (reading/writing files)
 - Functions
 - Loops & Conditionals
