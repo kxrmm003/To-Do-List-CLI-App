@@ -1,6 +1,5 @@
 # todo.py
 # 📝 Simple To-Do List CLI App
-# Made by a student using basic Python concepts
 
 def load_tasks():
     """Reads tasks from file and returns a list"""
@@ -20,7 +19,7 @@ def save_tasks(tasks):
 def show_tasks(tasks):
     """Displays all tasks"""
     if not tasks:
-        print("📭 No tasks found.")
+        print("📭 No tasks founded.")
     else:
         print("\n📋 Your Tasks:")
         for i, task in enumerate(tasks, 1):
@@ -43,9 +42,9 @@ def update_task(tasks):
             new_task = input("Enter updated task: ")
             tasks[index] = new_task
             save_tasks(tasks)
-            print("✏️ Task updated.\n")
+            print("Task updated.\n")
         else:
-            print("❌ Invalid task number.\n")
+            print("Invalid task number.\n")
     except ValueError:
         print("⚠️ Please enter a valid number.\n")
 
@@ -57,14 +56,14 @@ def delete_task(tasks):
         if 0 <= index < len(tasks):
             deleted = tasks.pop(index)
             save_tasks(tasks)
-            print(f"🗑️ Task '{deleted}' deleted.\n")
+            print(f" Task '{deleted}' deleted.\n")
         else:
-            print("❌ Invalid task number.\n")
+            print(" Invalid task number.\n")
     except ValueError:
         print("⚠️ Please enter a valid number.\n")
 
 def main():
-    print("📌 Welcome to the CLI To-Do List App")
+    print(" Welcome to the CLI To-Do List App")
     tasks = load_tasks()
 
     while True:
@@ -86,7 +85,7 @@ def main():
         elif choice == "4":
             delete_task(tasks)
         elif choice == "5":
-            print("👋 Exiting... Bye!")
+            print("EXIT")
             break
         else:
             print("⚠️ Invalid choice. Try again.\n")
